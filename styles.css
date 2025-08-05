@@ -82,8 +82,8 @@ body {
 
 .logo-container {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 400px;
+    height: 80px;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -93,14 +93,28 @@ body {
     height: 100%;
     object-fit: contain;
     transition: opacity 0.3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .logo-dark {
     opacity: 0;
+    z-index: 1;
 }
 
 .logo-light {
     opacity: 1;
+    z-index: 1;
+}
+
+/* Ensure the visible logo is always on top */
+.logo-dark[style*="opacity: 1"] {
+    z-index: 2;
+}
+
+.logo-light[style*="opacity: 1"] {
+    z-index: 2;
 }
 
 .logo-text {
@@ -636,6 +650,11 @@ body {
         height: 70px;
     }
 
+    .logo-container {
+        width: 200px;
+        height: 50px;
+    }
+
     .logo-text {
         font-size: 1rem;
     }
@@ -711,6 +730,11 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo-container {
+        width: 150px;
+        height: 40px;
+    }
+
     .page-header h1 {
         font-size: 1.75rem;
     }
