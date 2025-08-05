@@ -175,12 +175,22 @@ async function openEventModal(eventIndex) {
         // Show modal
         eventModal.classList.add('active');
         document.body.style.overflow = 'hidden';
+        // Push state for back button support
+        history.pushState({ modal: 'event' }, '', '#event');
         
     } catch (error) {
         console.error('Error loading event details:', error);
         alert('Failed to load event details. Please try again.');
     }
 }
+
+// Listen for popstate to close modal on back
+window.addEventListener('popstate', (e) => {
+    if (eventModal.classList.contains('active')) {
+        eventModal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});
 
 // Close event modal by clicking outside
 eventModal.addEventListener('click', (e) => {
