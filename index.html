@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Session Events</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+        <div class="header-content">
+            <div class="logo-section">
+                <div class="logo-container">
+                    <img src="pictures/light.png" alt="KARMAVESH Logo" class="logo logo-light" id="logoLight">
+                    <img src="pictures/dark.png" alt="KARMAVESH Logo" class="logo logo-dark" id="logoDark">
+                </div>
+                
+            </div>
+            
+            <nav>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#calendar">Calendar</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-controls">
+                <button class="theme-toggle" id="themeToggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <div class="page-header">
+            <h1>Academic Session Events</h1>
+            <p>Stay updated with our upcoming academic and cultural events</p>
+        </div>
+
+        <!-- Calendar Section -->
+        <section class="calendar-section">
+            <div class="calendar-header">
+                <div>
+                    <h2 class="calendar-title">Upcoming Events</h2>
+                    <p class="calendar-subtitle">Mark your calendars for these exciting events</p>
+                </div>
+            </div>
+
+            <div class="events-grid">
+                <!-- Event 1 -->
+                <div class="event-card">
+                    <div class="status-badge status-confirmed">Confirmed</div>
+                    <div class="event-icon icon-seminar">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="event-title">AI & Machine Learning Symposium</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 15 Aug 2025</p>
+                    <p class="event-description">Join industry experts and researchers for an insightful discussion on the latest trends in artificial intelligence and machine learning applications.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Computer Science Department</p>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-card">
+                    <div class="status-badge status-tentative">Tentative</div>
+                    <div class="event-icon icon-workshop">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="event-title">Digital Marketing Workshop</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 22 Aug 2025</p>
+                    <p class="event-description">Hands-on workshop covering social media marketing, SEO, and content creation strategies for modern businesses.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Business Club</p>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-card">
+                    <div class="status-badge status-confirmed">Confirmed</div>
+                    <div class="event-icon icon-competition">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3 class="event-title">Inter-College Coding Championship</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 28 Aug 2025</p>
+                    <p class="event-description">Test your programming skills in this competitive coding event. Open to all students with exciting prizes for winners.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Programming Society</p>
+                </div>
+
+                <!-- Event 4 -->
+                <div class="event-card">
+                    <div class="status-badge status-confirmed">Confirmed</div>
+                    <div class="event-icon icon-cultural">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="event-title">Annual Cultural Festival</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 05 Sep 2025</p>
+                    <p class="event-description">Celebrate diversity through music, dance, drama, and art. A three-day extravaganza showcasing student talents.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Cultural Committee</p>
+                </div>
+
+                <!-- Event 5 -->
+                <div class="event-card">
+                    <div class="status-badge status-coming-soon">Coming Soon</div>
+                    <div class="event-icon icon-seminar">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="event-title">Career Guidance Seminar</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> TBD Sep 2025</p>
+                    <p class="event-description">Expert guidance on career opportunities, interview preparation, and industry insights for final year students.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Career Development Cell</p>
+                </div>
+
+                <!-- Event 6 -->
+                <div class="event-card">
+                    <div class="status-badge status-confirmed">Confirmed</div>
+                    <div class="event-icon icon-sports">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <h3 class="event-title">Annual Sports Meet</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 18 Sep 2025</p>
+                    <p class="event-description">Athletic competitions including track and field events, team sports, and recreational activities for all students.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Sports Committee</p>
+                </div>
+
+                <!-- Event 7 -->
+                <div class="event-card">
+                    <div class="status-badge status-tentative">Tentative</div>
+                    <div class="event-icon icon-workshop">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3 class="event-title">Web Development Bootcamp</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 25 Sep 2025</p>
+                    <p class="event-description">Intensive 3-day bootcamp covering modern web technologies including React, Node.js, and database management.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Tech Innovation Club</p>
+                </div>
+
+                <!-- Event 8 -->
+                <div class="event-card">
+                    <div class="status-badge status-confirmed">Confirmed</div>
+                    <div class="event-icon icon-seminar">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="event-title">Innovation & Entrepreneurship Summit</h3>
+                    <p class="event-date"><i class="far fa-calendar-alt"></i> 10 Oct 2025</p>
+                    <p class="event-description">Meet successful entrepreneurs, learn about startup ecosystems, and pitch your innovative ideas to industry mentors.</p>
+                    <p class="event-organizer"><i class="fas fa-users"></i> Entrepreneurship Cell</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Fixed Footer -->
+    <footer class="fixed-footer">
+        <div class="footer-content">
+            <div class="footer-credits">
+                © 2025 College Community. All rights reserved.
+            </div>
+            <a href="#contact" class="contact-btn">
+                <i class="fas fa-envelope"></i> Contact Us
+            </a>
+        </div>
+    </footer>
+
+    <!-- About Us Modal -->
+    <div class="modal-overlay" id="aboutModal">
+        <div class="modal">
+            <button class="modal-close" id="modalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-image-placeholder">
+                <i class="fas fa-users"></i>
+            </div>
+            <h2 class="modal-title">About Our Community</h2>
+            <div class="modal-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <br>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <br>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Event Details Modal -->
+    <div class="modal-overlay" id="eventModal">
+        <div class="modal event-modal">
+            <button class="modal-close" id="eventModalClose">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="event-modal-header">
+                <div class="event-modal-icon" id="eventModalIcon">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="event-modal-status" id="eventModalStatus">
+                    <span class="status-badge status-confirmed">Confirmed</span>
+                </div>
+            </div>
+            
+            <h2 class="event-modal-title" id="eventModalTitle">Event Title</h2>
+            <p class="event-modal-date" id="eventModalDate">
+                <i class="far fa-calendar-alt"></i> Event Date
+            </p>
+            
+            <div class="event-modal-details">
+                <div class="detail-section">
+                    <h3><i class="fas fa-info-circle"></i> Event Description</h3>
+                    <p id="eventModalDescription">Detailed description of the event will appear here...</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3><i class="fas fa-users"></i> Organizer</h3>
+                    <p id="eventModalOrganizer">Event organizer information</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3><i class="fas fa-map-marker-alt"></i> Venue</h3>
+                    <p id="eventModalVenue">Main Auditorium, Block A</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3><i class="fas fa-clock"></i> Time</h3>
+                    <p id="eventModalTime">10:00 AM - 2:00 PM</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3><i class="fas fa-ticket-alt"></i> Registration</h3>
+                    <p id="eventModalRegistration">Free entry for all students</p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3><i class="fas fa-phone"></i> Contact</h3>
+                    <p id="eventModalContact">Email: events@college.edu | Phone: +1 234 567 8900</p>
+                </div>
+            </div>
+            
+            <div class="event-modal-actions">
+                <button class="btn btn-primary">
+                    <i class="fas fa-calendar-plus"></i> Add to Calendar
+                </button>
+                <button class="btn btn-secondary">
+                    <i class="fas fa-share"></i> Share Event
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
